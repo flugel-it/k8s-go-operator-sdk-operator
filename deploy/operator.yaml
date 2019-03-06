@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: immortalcontainer-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: immortalcontainer-operator
+  template:
+    metadata:
+      labels:
+        name: immortalcontainer-operator
+    spec:
+      serviceAccountName: immortalcontainer-operator
+      containers:
+        - name: immortalcontainer-operator
+          # Replace this with the built image name
+          image: REPLACE_IMAGE
+          command:
+          - immortalcontainer-operator
+          imagePullPolicy: Always
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: "immortalcontainer-operator"
