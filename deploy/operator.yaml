@@ -16,10 +16,10 @@ spec:
       containers:
         - name: immortalcontainer-operator
           # Replace this with the built image name
-          image: REPLACE_IMAGE
+          image: zzmike/immortalcontainer:dev
           command:
           - immortalcontainer-operator
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           env:
             - name: WATCH_NAMESPACE
               valueFrom:

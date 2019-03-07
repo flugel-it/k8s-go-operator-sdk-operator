@@ -1,0 +1,7 @@
+apiVersion: immortalcontainer.flugel.it/v1alpha1
+kind: ImmortalContainer
+metadata:
+  name: example-immortalcontainer
+spec:
+  # Add fields here
+  image: nginx:latest
