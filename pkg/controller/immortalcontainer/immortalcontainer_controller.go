@@ -3,7 +3,7 @@ package immortalcontainer
 import (
 	"context"
 
-	immortalcontainerv1alpha1 "github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1"
+	immortalcontainerv1alpha1 "github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1"
 
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"

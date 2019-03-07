@@ -1,7 +1,7 @@
 package apis
 
 import (
-	"github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1"
+	"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1"
 )
 
 func init() {

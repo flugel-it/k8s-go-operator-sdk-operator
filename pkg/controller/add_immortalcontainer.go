@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/flugel-it/immortalcontainer-operator/pkg/controller/immortalcontainer"
+	"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/controller/immortalcontainer"
 )
 
 func init() {

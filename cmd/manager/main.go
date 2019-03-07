@@ -7,8 +7,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/flugel-it/immortalcontainer-operator/pkg/apis"
-	"github.com/flugel-it/immortalcontainer-operator/pkg/controller"
+	"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis"
+	"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/controller"
 
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
 	"github.com/operator-framework/operator-sdk/pkg/leader"

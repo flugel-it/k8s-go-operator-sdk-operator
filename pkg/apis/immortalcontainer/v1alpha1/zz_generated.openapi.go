@@ -13,9 +13,9 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainer":       schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainer(ref),
-		"github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerSpec":   schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainerSpec(ref),
-		"github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerStatus": schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainerStatus(ref),
+		"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainer":       schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainer(ref),
+		"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerSpec":   schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainerSpec(ref),
+		"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerStatus": schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainerStatus(ref),
 	}
 }
 
@@ -46,19 +46,19 @@ func schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainer(ref common.Ref
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerSpec"),
+							Ref: ref("github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerStatus"),
+							Ref: ref("github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerSpec", "github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerSpec", "github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1.ImmortalContainerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 

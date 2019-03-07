@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/flugel-it/immortalcontainer-operator/pkg/apis"
-	operator "github.com/flugel-it/immortalcontainer-operator/pkg/apis/immortalcontainer/v1alpha1"
+	"github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis"
+	operator "github.com/flugel-it/k8s-go-operator-sdk-operator/pkg/apis/immortalcontainer/v1alpha1"
 	framework "github.com/operator-framework/operator-sdk/pkg/test"
 	"github.com/operator-framework/operator-sdk/pkg/test/e2eutil"
 	corev1 "k8s.io/api/core/v1"
