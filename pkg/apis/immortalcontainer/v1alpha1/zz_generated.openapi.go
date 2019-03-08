@@ -67,7 +67,15 @@ func schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainerSpec(ref common
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
 				Description: "ImmortalContainerSpec defines the desired state of ImmortalContainer",
-				Properties:  map[string]spec.Schema{},
+				Properties: map[string]spec.Schema{
+					"image": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+				},
+				Required: []string{"image"},
 			},
 		},
 		Dependencies: []string{},
@@ -79,7 +87,21 @@ func schema_pkg_apis_immortalcontainer_v1alpha1_ImmortalContainerStatus(ref comm
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
 				Description: "ImmortalContainerStatus defines the observed state of ImmortalContainer",
-				Properties:  map[string]spec.Schema{},
+				Properties: map[string]spec.Schema{
+					"currentPod": {
+						SchemaProps: spec.SchemaProps{
+							Description: "INSERT ADDITIONAL STATUS FIELD - define observed state of cluster Important: Run \"operator-sdk generate k8s\" to regenerate code after modifying this file Add custom validation using kubebuilder tags: https://book.kubebuilder.io/beyond_basics/generating_crd.html",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"startTimes": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"integer"},
+							Format: "int32",
+						},
+					},
+				},
 			},
 		},
 		Dependencies: []string{},

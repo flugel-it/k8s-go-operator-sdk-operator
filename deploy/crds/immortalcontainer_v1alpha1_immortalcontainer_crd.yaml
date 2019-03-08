@@ -22,8 +22,20 @@ spec:
         metadata:
           type: object
         spec:
+          properties:
+            image:
+              minLength: 1
+              type: string
+          required:
+          - image
           type: object
         status:
+          properties:
+            currentPod:
+              type: string
+            startTimes:
+              format: int64
+              type: integer
           type: object
   version: v1alpha1
   versions:
