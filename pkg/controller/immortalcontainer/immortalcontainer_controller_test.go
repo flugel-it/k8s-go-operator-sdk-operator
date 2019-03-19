@@ -51,9 +51,8 @@ func TestImmortalContainerControllerPodCreate(t *testing.T) {
 			Namespace: namespace,
 		},
 	}
-	res, err := r.Reconcile(req)
-
-	res, err = r.Reconcile(req)
+    
+    res, err := r.Reconcile(req)
 	if err != nil {
 		t.Fatalf("reconcile: (%v)", err)
 	}
