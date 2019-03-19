@@ -40,7 +40,7 @@ func TestImmortalContainerControllerPodCreate(t *testing.T) {
 	s.AddKnownTypes(immv1alpha1.SchemeGroupVersion, immortalContainer)
 	// Create a fake client to mock API calls.
 	cl := fake.NewFakeClient(objs...)
-	// Create a ReconcileMemcached object with the scheme and fake client.
+	// Create a ReconcileImmortalContainer object with the scheme and fake client.
 	r := &ReconcileImmortalContainer{client: cl, scheme: s}
 
 	// Mock request to simulate Reconcile() being called on an event for a
