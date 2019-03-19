@@ -18,7 +18,7 @@ func TestImmortalContainerControllerPodCreate(t *testing.T) {
 	var (
 		name      = "example"
 		image     = "nginx:latest"
-		namespace = "memcached"
+		namespace = "testnamespace"
 	)
 
 	immortalContainer := &immv1alpha1.ImmortalContainer{
