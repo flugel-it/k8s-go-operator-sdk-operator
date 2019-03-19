@@ -16,7 +16,7 @@ spec:
       containers:
         - name: immortalcontainer-operator
           # Replace this with the built image name
-          image: zzmike/immortalcontainer:dev
+          image: flugelit/immortalcontainer-operator:dev
           command:
           - immortalcontainer-operator
           imagePullPolicy: IfNotPresent
